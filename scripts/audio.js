@@ -1,5 +1,5 @@
 //Audio Context
-var context = new webkitAudioContext();
+var context = new AudioContext();
 //Object that stores all the node objects in the program
 var nodes = {};
 

@@ -28,7 +28,7 @@ var Filter = function () {
 
     this.read = function () {
         var frequency = parseFloat($("#" + this.id + "-frequency").val());
-        var type = parseInt($("#" + this.id + "-type").prop("selectedIndex"));
+        var type = $("#" + this.id + "-type").val().toLowerCase();
         this.setFrequency(frequency);
         this.node.type = type;
         this.typeIndex = type;
@@ -58,7 +58,7 @@ var Filter = function () {
     this.connect = function (node) {
         this.node.connect(node.node);
     }
-    
+
     this.playNote = function (sustainLength) {
         //Attack
         this.node.frequency.linearRampToValueAtTime(2400, now() + this.envelope.attack);

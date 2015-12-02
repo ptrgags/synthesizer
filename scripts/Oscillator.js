@@ -30,7 +30,7 @@ var Oscillator = function () {
     //Read the settings from the control panel for this oscillator
     this.read = function () {
         var frequency = parseFloat($("#" + this.id + "-frequency").val());
-        var type = parseInt($("#" + this.id + "-type").prop("selectedIndex"));
+        var type = $("#" + this.id + "-type").val().toLowerCase();
         this.setFrequency(frequency);
         this.node.type = type;
         this.typeIndex = type;

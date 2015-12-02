@@ -2,7 +2,7 @@
 var Amplifier = function () {
     this.id = "AMP" + amps++;
     this.name = "Amplifier";
-    this.node = context.createGainNode();
+    this.node = context.createGain();
     this.node.gain.value = 0.5;
 
     this.toHTML = function () {

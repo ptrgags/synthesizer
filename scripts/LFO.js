@@ -6,7 +6,7 @@ var LFO = function (maxGain) {
     this.id = "LFO" + oscillators++;
     this.name = "LFO";
     this.node = context.createOscillator();
-    this.gain = context.createGainNode();
+    this.gain = context.createGain();
     this.gain.gain.value = maxGain;
     this.maxGain = maxGain;
     this.node.connect(this.gain);
@@ -32,7 +32,7 @@ var LFO = function (maxGain) {
     this.read = function () {
         var frequency = parseFloat($("#" + this.id + "-frequency").val());
         var gain = parseFloat($("#" + this.id + "-gain").val());
-        var type = parseInt($("#" + this.id + "-type").prop("selectedIndex"));
+        var type = $("#" + this.id + "-type").val().toLowerCase();
         this.setFrequency(frequency);
         this.gain.gain.value = gain;
         this.node.type = type;
