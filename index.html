@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Synth Demo</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/lib/jquery-min.js"></script>
+    <script src="scripts/audio.js"></script>
+    <script src="scripts/Amplifier.js"></script>
+    <script src="scripts/Filter.js"></script>
+    <script src="scripts/Envelope.js"></script>
+    <script src="scripts/Oscillator.js"></script>
+    <script src="scripts/LFO.js"></script>
+</head>
+<body onload="init()">
+    <div id="container" class="container"></div>
+    <div class="container">
+        Note Duration: <input id="duration" type="range" min=".1" max="3" step=".1" value=".1" /><br />
+        <button onclick="play();">Play</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿body {
+    background-color:   #006363;
+    color:              #FFFFFF;
+}
+.container {
+    text-align:     center;
+}
+.node {
+    text-align:     left;
+    font-family:    sans-serif;
+    border-style:   solid;
+    border-width:   1px;
+    display:        inline-block;
+    padding:        4px;
+    width:          50%;
+    border-radius:  10px;
+}
+.filter, .oscillator, .amplifier {
+    background-color:   #1D7373;
+    border-color:       #006363;
+}
+.adsr {
+    background-color:   #009999;
+    border-color:       #1D7373;
+    color:              #000000;
+}
+.note {
+    background-color:   #FFFF00;
+    border-color:       #CCCC00;
+}
+.lfo {
+    background-color:   #33CCCC;
+    border-color:       #009999;
+    color:              #000000;
+}
+h3 {
+    margin: 0px;
+}
+.presets {
+    position: absolute;
+}
